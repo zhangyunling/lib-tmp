@@ -1,0 +1,17 @@
+{
+    "linters": {
+        "src/*/*.ts": [
+            "prettier-eslint --write",
+            "eslint --fix",
+            "git add"
+        ],
+        "src/*/*.js": [
+            "prettier-eslint --write",
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "ignore": [
+        "**/src/local/*"
+    ]
+}
