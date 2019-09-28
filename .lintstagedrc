@@ -10,8 +10,5 @@
             "eslint --fix",
             "git add"
         ]
-    },
-    "ignore": [
-        "**/src/local/*"
-    ]
+    }
 }

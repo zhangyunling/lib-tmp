@@ -6,8 +6,8 @@ const path = require('path');
 const pkg = require('../package.json');
 let fileName = pkg.fileName;
 
-// 实时编译，自动编译生成lib的版本号；
-require('../scripts/create-version.js');
+// 实时编译，几个自动化的小工具；
+require('../scripts/create.js');
 
 const baseWebpackConfig = {
   entry: {

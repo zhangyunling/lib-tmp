@@ -1,7 +1,7 @@
 {
   "name": "lib-flow",
-  "libName": "libName",
-  "fileName": "libName",
+  "libName": "libFlow",
+  "fileName": "lib-flow",
   "version": "0.0.1",
   "description": "类库的脚手架",
   "author": "zhangyunling",
@@ -9,15 +9,15 @@
   "files": [
     "LICENSE",
     "README.md",
-    "lib/"
+    "lib/",
+    "dist/"
   ],
   "keywords": [],
   "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.dev.conf.js && npm run readme",
-    "build": "webpack --inline --progress --config build/webpack.prod.conf.js && npm run readme",
-    "readme": "node scripts/create-readme",
-    "pub": "tsc && npm run build",
-    "tsc": "tsc"
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
+    "build": "webpack --inline --progress --config build/webpack.prod.conf.js",
+    "tsc": "tsc",
+    "publish": "npm run build && tsc && npm publish"
   },
   "husky": {
     "hooks": {

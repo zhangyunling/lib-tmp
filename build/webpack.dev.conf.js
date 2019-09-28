@@ -13,7 +13,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   },
   devServer: {
     contentBase: [
-      path.join(__dirname, '../test/view/'), 
+      path.join(__dirname, '../test/'), 
       path.join(__dirname, '../')
     ],
     clientLogLevel: 'warning',
@@ -22,7 +22,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     hot: true,
     compress: true,
     host: '0.0.0.0',
-    port: 8082,
+    port: 8089,
     open: false,
     overlay: { 
       warnings: false, 

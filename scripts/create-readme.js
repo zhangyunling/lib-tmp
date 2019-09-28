@@ -4,11 +4,8 @@ const path = require('path');
 const pkg = require('../package.json');
 
 let readmeTxt = `
-## cpc-bridge（最新版本：${pkg.version}）
-> 兼容qapp，cpc，qtt三端的bridge方法；
-> 过度的bridge，以后会统一到qapp的；
-
-qapp的api文档：http://qapp-docs.qttfe.com/#/bridge/
+## lib-flow（最新版本：${pkg.version}）
+> 一个支持typescript的类库脚手架；
 
 ### 开发文档
 
@@ -24,7 +21,13 @@ npm i
 npm run dev
 \`\`\`
 
-业务调试：[http://localhost:8080/](http://localhost:8080/)
+开发调试：
+
+[http://localhost:8089/](http://localhost:8089/)
+
+[http://127.0.0.1:8089/](http://127.0.0.1:8089/)
+
+[http://{你的ip}:8089/](http://{你的ip}:8089/)
 
 #### 编译项目
 > 编译后的代码，会在 根目录的 \`dist\` 目录
@@ -82,8 +85,10 @@ git commit -m "feat(信息): 描述信息"
 
 > 小括号部分，可有可无，描述信息必须要有；
 
-### 目录结构
-> 晚些时间，确定后在修改；
+### npm包发布
+\`\`\`
+npm run publish
+\`\`\`
 
 `;
 
