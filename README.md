@@ -1,5 +1,5 @@
 
-## lib-flow（最新版本：0.0.1）
+## lib-flow（最新版本：0.0.2）
 > 一个支持typescript的类库脚手架；
 
 ### 开发文档
@@ -82,6 +82,6 @@ git commit -m "feat(信息): 描述信息"
 
 ### npm包发布
 ```
-npm run publish
+npm run pub
 ```
 
