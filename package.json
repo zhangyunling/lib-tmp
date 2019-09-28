@@ -2,7 +2,7 @@
   "name": "lib-flow",
   "libName": "libFlow",
   "fileName": "lib-flow",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "类库的脚手架",
   "author": "zhangyunling",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
     "build": "webpack --inline --progress --config build/webpack.prod.conf.js",
     "tsc": "tsc",
-    "publish": "npm run build && tsc && npm publish"
+    "pub": "npm run build && tsc && npm publish"
   },
   "husky": {
     "hooks": {

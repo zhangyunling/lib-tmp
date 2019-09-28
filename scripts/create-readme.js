@@ -87,7 +87,7 @@ git commit -m "feat(信息): 描述信息"
 
 ### npm包发布
 \`\`\`
-npm run publish
+npm run pub
 \`\`\`
 
 `;
