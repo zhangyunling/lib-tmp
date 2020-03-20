@@ -26,10 +26,11 @@ let versionTxt = `/**
 export var version: string = '${pkg.version}';
 export var versionCode: number = ${_vCode};
 
-export default {
+export const vCfg: LibVersionTypes = {
   version,
   versionCode
-};
+}
+export default vCfg;
 `;
 
 fs.writeFile(

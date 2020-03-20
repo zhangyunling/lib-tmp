@@ -12,12 +12,10 @@
     "skipLibCheck": true, // 忽略所有的声明文件（ *.d.ts）的类型检查。
     "noUnusedLocals": true, // 若有未使用的局部变量则抛错。
     "declaration": true,
-    "declarationDir": "./lib/@types",
-    "typeRoots" : ["./src/@types"]
+    "declarationDir": "./@types"
   },
   "include": [
     "./src/**/*.ts",
-    "./src/**/*.*.ts",
     "./src/*.ts"
   ],
   "exclude": [

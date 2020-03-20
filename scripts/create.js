@@ -3,6 +3,4 @@
  */
 
 'use strict'
-require('./create-readme.js');
 require('./create-version.js');
-require('./create-apiList.js');

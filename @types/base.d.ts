@@ -4,7 +4,7 @@
  */
 
 // 版本号定义
-interface LibVersionTypes {
+export interface LibVersionTypes {
   readonly version: string; // 字符串版本号
   readonly versionCode: number; // 数字版本号
 }
