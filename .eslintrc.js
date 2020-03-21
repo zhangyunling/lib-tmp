@@ -3,7 +3,7 @@
  * 比如：线上打包，不支持遗留console.log这样的字样；
  * 参考 https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
  */
-const isPro = process.argv.join('').indexOf('prod.conf') !== -1;
+const isPro = process.argv.join('').indexOf('prod') !== -1;
 const proRules = {};
 
 // 线上打包时，修改一些默认的设置；

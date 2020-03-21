@@ -10,14 +10,16 @@
     "LICENSE",
     "README.md",
     "lib/",
-    "dist/"
+    "docs/"
   ],
   "keywords": [],
   "scripts": {
+    "create": "node scripts/create",
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
-    "build": "webpack --inline --progress --config build/webpack.prod.conf.js",
-    "tsc": "tsc",
-    "pub": "npm run build && tsc && npm publish"
+    "build:prd": "webpack --progress --prod --config build/webpack.prod.conf.js",
+    "build:ts": "tsc",
+    "build": "npm run build:prd && npm run build:ts",
+    "docs": "docsify serve docs"
   },
   "husky": {
     "hooks": {
@@ -39,6 +41,7 @@
     "@typescript-eslint/parser": "2.24.0",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.0.6",
+    "docsify-cli": "4.4.0",
     "eslint": "6.8.0",
     "eslint-config-standard": "14.1.0",
     "eslint-loader": "3.0.3",
