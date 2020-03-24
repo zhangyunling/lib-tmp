@@ -22,6 +22,7 @@ function _getVersionCode(version){
 let versionTxt = `/**
  * @desc version的配置，根据package.json自动生成的；
  */
+import { LibVersionTypes } from './../../types/index';
 
 export var version: string = '${pkg.version}';
 export var versionCode: number = ${_vCode};

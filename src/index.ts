@@ -5,14 +5,8 @@
 
 // version的信息，不可变
 import { version, versionCode } from './.cache/version';
-import add from './api/add';
-import double from './api/double';
+import trace from './api/trace';
 
-export { version, versionCode, add, double };
+export { version, versionCode, trace };
 
-export default {
-  version,
-  versionCode,
-  add,
-  double
-};
+export default trace;

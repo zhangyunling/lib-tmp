@@ -2,7 +2,7 @@
   "name": "lib-flow",
   "libName": "libFlow",
   "fileName": "lib-flow",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "类库的脚手架",
   "author": "zhangyunling",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
     "create": "node scripts/create",
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
     "build:prd": "webpack --progress --prod --config build/webpack.prod.conf.js",
-    "build:ts": "tsc",
+    "build:ts": "npm run create && tsc",
     "build": "npm run build:prd && npm run build:ts",
     "docs": "docsify serve docs"
   },

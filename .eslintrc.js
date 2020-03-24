@@ -45,6 +45,7 @@ module.exports = {
         'no-useless-constructor': 'off', // 允许简单构造函数
         'no-undef': 'off', // 允许未定义使用变量
         eqeqeq: 'off', // 允许使用==
+        'no-unused-vars': 'off', // 允许
 
         // allow async-await
         'generator-star-spacing': 'off', // 关闭
