@@ -22,7 +22,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     hot: true,
     compress: true,
     host: '0.0.0.0',
-    port: 8081,
+    port: 8088,
     open: false,
     overlay: { 
       warnings: false, 

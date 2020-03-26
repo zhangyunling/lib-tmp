@@ -1,7 +1,7 @@
 {
-  "name": "lib-flow",
-  "libName": "libFlow",
-  "fileName": "lib-flow",
+  "name": "lib-tmp",
+  "libName": "libTmp",
+  "fileName": "lib-tmp",
   "version": "0.0.3",
   "description": "类库的脚手架",
   "author": "zhangyunling",
@@ -14,11 +14,11 @@
   ],
   "keywords": [],
   "scripts": {
-    "create": "node scripts/create",
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
     "build:prd": "webpack --progress --prod --config build/webpack.prod.conf.js",
     "build:ts": "npm run create && tsc",
     "build": "npm run build:prd && npm run build:ts",
+    "create": "node scripts/create",
     "docs": "docsify serve docs"
   },
   "husky": {
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhangyunling/lib-flow.git"
+    "url": "https://github.com/zhangyunling/lib-tmp.git"
   },
   "license": "MIT",
   "dependencies": {},

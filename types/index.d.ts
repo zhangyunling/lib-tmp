@@ -15,8 +15,3 @@ export interface TraceOptionsTypes {
   op1: string;             // trace op1
   [propName: string]: any; // 其他的自定义属性
 }
-
-// 仓库支持的api
-export interface LibApiTypes extends LibVersionTypes {
-  trace: Function; // trace方法
-}

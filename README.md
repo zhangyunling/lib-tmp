@@ -1,6 +1,15 @@
 
-## lib-flow（最新版本：0.0.2）
-> 一个支持typescript的类库脚手架；
+## lib-tmp
+> 一个支持typescript的类库，适合于用于一些工具仓库；
+
+### 支持性：
+1. typescript [官方文档](https://www.tslang.cn/docs/handbook/basic-types.html)，[其他文档](https://ts.xcatliu.com/basics)
+2. es6
+3. docs 文档
+4. eslint 语法检测
+5. commitlint 提交规范
+6. mocha 单元测试；
+7. 支持分文件打包，和直接webpack打包；
 
 ### 开发文档
 
@@ -18,35 +27,21 @@ npm run dev
 
 开发调试：
 
-[http://localhost:8089/](http://localhost:8089/)
+[http://localhost:8088/](http://localhost:8088/)
 
-[http://127.0.0.1:8089/](http://127.0.0.1:8089/)
+[http://127.0.0.1:8088/](http://127.0.0.1:8088/)
 
-[http://{你的ip}:8089/](http://{你的ip}:8089/)
+[http://{你的ip}:8088/](http://{你的ip}:8088/)
 
 #### 编译项目
 > 编译后的代码，会在 根目录的 `dist` 目录
 ```
-npm run build
+npm run build:prd  // webpack打包，打包目录在dist目录
+npm run build:ts   // ts打包，打包目录在lib；
+npm run build      // 同时执行上述两个打包
 ```
 
 #### 其他依赖
-
-##### eslint
-
-> [eslint 官方文档](https://cn.eslint.org/)
-
-代码风格，使用`eslint`来限制；
-eslint规则在跟目录的：`.eslintrc.js`文件；
-
-为了开发方便，在开发和编译的过程中，有些配置是不同的，具体可以去配置文件查看；
-
-> 例如：开发中可以使用console.log，但是编译时，console.log会报错，无法编译成功；
-
-##### typescript
-> [官方文档](https://www.tslang.cn/docs/handbook/basic-types.html)，[其他文档](https://ts.xcatliu.com/basics)
-
-代码的静态检查使用 `typescript` ，所以需要你去简单了解一下语法；
 
 ##### pre-commit 
 > 增加`git commit`前的钩子，来做一些限制；
@@ -76,12 +71,5 @@ commit 的提交类型主要包含以下几种：
 ```
 git commit -m "feat: 描述信息"
 git commit -m "feat(信息): 描述信息"
-```
-
-> 小括号部分，可有可无，描述信息必须要有；
-
-### npm包发布
-```
-npm run pub
 ```
 
